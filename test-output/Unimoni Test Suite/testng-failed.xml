@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [Unimoni Test Suite]" parallel="tests">
+  <parameter name="browser" value="firefox"/>
+  <test name="firefox suite(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.unimoni.testng.ParellalExample8">
+        <methods>
+          <include name="init"/>
+          <include name="init"/>
+          <include name="googleSearch_one"/>
+          <include name="teardown"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.unimoni.testng.ParellalExample8 -->
+    </classes>
+  </test> <!-- firefox suite(failed) -->
+</suite> <!-- Failed suite [Unimoni Test Suite] -->
